@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>x/home</title>
+  <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-black text-white ">
+  <div class="flex container mx-auto" >
+    <div class="first w-[50%] sticky top-0 h-screen">
+
+      <div class="logo justify-center items-center flex invert ml-6 mt-4 mb-4 w-1/2"> <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+          <g>
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+          </g>
+        </svg></div>
+
+      <div class="sidebar flex justify-center font-semibold">
+        <ul class="flex flex-col text-xl  w-1/2">
+          <li class="flex justify-start items-center gap-4 w-fit px-2 py-2 pr-3 hover:bg-gray-900 cursor-pointer hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+              home
+            </span>Home
+          </li>
+          <li class="flex justify-start items-center gap-4 w-fit px-2 py-2 pr-3 hover:bg-gray-900 cursor-pointer hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+              search
+            </span> Explore</li>
+          <li class="flex justify-start items-center gap-4 w-fit px-2 py-2 pr-3 hover:bg-gray-900 cursor-pointer hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+              <span class="material-symbols-outlined text-3xl">
+                notifications
+              </span>
+            </span> Notifications</li>
+          <li class="flex justify-start items-center gap-4 w-fit px-2 py-2 pr-3 hover:bg-gray-900 cursor-pointer hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+              mail
+            </span> Messages</li>
+          <li class="flex justify-start items-center gap-4 w-fit px-2 py-2 pr-3 hover:bg-gray-900 cursor-pointer hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+              radio_button_checked
+            </span> Grok</li>
+          <li class="flex justify-start items-center gap-4 w-fit px-2 py-2 pr-3 hover:bg-gray-900 cursor-pointer hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+              group
+            </span> Communities</li>
+          <li class="flex justify-start items-center gap-4 w-fit px-2 py-2 pr-3 hover:bg-gray-900 cursor-pointer hover:rounded-3xl"><svg viewBox="0 0 24 24" aria-hidden="true" class="w-6 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+              <g>
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </g>
+            </svg> Premium</li>
+          <li class="flex justify-start items-center gap-3 w-fit px-2 py-2 pr-3 hover:bg-gray-900 cursor-pointer hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+              flash_on
+            </span> Verified Orgs</li>
+          <li class="flex justify-start items-center gap-4 w-fit px-2 py-2 pr-3 hover:bg-gray-900 cursor-pointer hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+              person
+            </span> Profile</li>
+          <li class="flex justify-start items-center gap-4 w-fit px-2 py-2 pr-3 hover:bg-gray-900 cursor-pointer hover:rounded-3xl"><span class="material-symbols-outlined text-3xl">
+              more_horiz
+            </span> More</li>
+        </ul>
+      </div>
+      <div class="pbtn w-full flex justify-center m-3"><button class=" text-black font-bold p-3 px-20 rounded-3xl bg-white hover:bg-slate-300">Post</button></div>
+    </div>
+
+
+
+    <div class="second w-[90%]  border-[0.5px] border-x-gray-500 border-y-black">
+      <div class="top flex flex-row font-bold relative border-[0.5px] border-b-gray-500 border-y-black border-x-black">
+        <div class="line bg-blue-400 w-14 h-1 absolute bottom-0 rounded-full left-[20%]"></div>
+        <div class="left w-1/2 flex justify-center p-4">For You</div>
+        <div class="right w-1/2 flex justify-center p-3 pb-6">Following</div>
+      </div>
+      <div class="whatshappning flex flex-row gap-3 p-4">
+        <div class="img"><img class="w-12 rounded-full" src="https://pbs.twimg.com/profile_images/1893803697185910784/Na5lOWi5_400x400.jpg" alt="" srcset=""></div>
+        <input class="bg-black w-full text-white placeholder:text-gray-400 placeholder:text-xl outline-none " type="text" placeholder="what's happening?">
+      </div>
+      <div class="everyone text-blue-400 text-s font-bold flex flex-row gap-2 m-2 mb-4 ml-14">
+        <span class="material-symbols-outlined">
+          globe_asia
+        </span>
+        <span>Everyone can reply</span>
+      </div>
+      <div class="line w-[24vw] m-auto  h-[0.5px] bg-gray-600"></div>
+      <div class="extra flex flex-row text-blue-400 text-s m-4">
+        <div class="extra1 flex flex-row w-full justify-center gap-2 ml-2 items-center">
+          <span class="material-symbols-outlined  cursor-pointer">
+            image
+          </span>
+          <span class="material-symbols-outlined cursor-pointer">
+            gif_box
+          </span>
+          <span class="material-symbols-outlined cursor-pointer">
+            radio_button_checked
+          </span>
+          <span class="material-symbols-outlined cursor-pointer">
+            format_list_bulleted
+          </span>
+          <span class="material-symbols-outlined  cursor-pointer">
+            sentiment_satisfied
+          </span>
+          <span class="material-symbols-outlined cursor-pointer">
+            calendar_clock
+          </span>
+          <span class="material-symbols-outlined cursor-pointer">
+            location_on
+          </span>
+        </div>
+        <div class="extra2 w-1/2 flex justify-center"><button class="bg-gray-400 text-black font-bold p-2 px-6 rounded-3xl hover:bg-white">Post</button></div>
+      </div>
+      <div class="line w-full h-[0.5px] bg-gray-600"></div>
+      <div class="show w-full flex justify-center text-blue-400 my-3 cursor-pointer">Show 49 posts</div>
+      <div class="line w-full h-[0.5px] bg-gray-600"></div>
+
+      <div class="posts flex flex-col gap-2">
+        <div class="post flex flex-col">
+          <div class="topp flex p-2 pb-0 cursor-pointer gap-2 mt-1">
+            <div class="img"><img class="max-w-12 rounded-3xl " src="https://pbs.twimg.com/profile_images/1559375475557818368/ub-ZdXDD_400x400.jpg" alt="" srcset=""></div>
+            <div class="top1 flex-col">
+            <span class="text-white font-bold hover:underline ">Chennai Super Kings
+            </span>
+            <span class="text-gray-500">@ChennaiIPL·22m</span>
+            <div class="text">WankheDEN awaits!🦁🏟️
+              Clash of Champions Take 2️⃣🙌🏻</div>
+            </div>
+          </div>
+          <div class="content my-2 flex flex-col p-5 pt-0 gap-2 pb-0">
+            <div class="hashtag text-sm text-blue-500 cursor-pointer hover:underline">#MIvCSK #WhistlePodu 🦁💛</div>
+            <div class="imgp border-gray-600 rounded-3xl"><img class="rounded-3xl" src="https://pbs.twimg.com/media/Go8RDatW4AAavzv?format=jpg&name=small" alt=""></div>
+          </div>
+          <div class="like flex text-s text-gray-500 justify-evenly">
+            <span class="flex items-center"><span class="material-symbols-outlined">
+              mode_comment
+              </span>40</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                repeat
+              </span>90</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                favorite
+              </span>20k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bar_chart
+              </span>217k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bookmark
+                </span>
+                <span class="material-symbols-outlined">
+                  upload
+                  </span></span>
+          </div>
+        </div>
+
+        <div class="line w-full h-[0.5px] bg-gray-600"></div>
+
+        <div class="post flex flex-col">
+          <div class="topp flex p-2 pb-0 cursor-pointer gap-2 mt-1">
+            <div class="img"><img class="max-w-12 rounded-3xl " src="https://pbs.twimg.com/profile_images/1594446880498401282/o4L2z8Ay_400x400.jpg" alt="" srcset=""></div>
+            <div class="top1 flex-col">
+            <span class="text-white font-bold hover:underline ">Cristiano Ronaldo
+            </span>
+            <span class="text-gray-500">@Cristiano
+              ·
+              Apr 19</span>
+            <div class="text">¡Feliz día, mi amor! Nuestro amor siempre está contigo. 🥰❤️</div>
+            </div>
+          </div>
+          <div class="content my-2 flex flex-col p-5 pt-0 gap-2 pb-0">
+            <div class="hashtag text-sm text-blue-500 cursor-pointer hover:underline">#AngelyBella.</div>
+            <div class="imgp border border-gray-600 rounded-3xl"><img class="rounded-3xl" src="https://pbs.twimg.com/media/Goz5J-jX0AA7IL6?format=jpg&name=large" alt=""></div>
+          </div>
+          <div class="like flex text-s text-gray-500 justify-evenly mt-1">
+            <span class="flex items-center"><span class="material-symbols-outlined">
+              mode_comment
+              </span>8.2k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                repeat
+              </span>95</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                favorite
+              </span>867k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bar_chart
+              </span>27M</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bookmark
+                </span>
+                <span class="material-symbols-outlined">
+                  upload
+                  </span></span>
+          </div>
+        </div>
+        <div class="line w-full h-[0.5px] bg-gray-600"></div>
+        <div class="post flex flex-col">
+          <div class="topp flex p-2 pb-0 cursor-pointer gap-2 mt-1">
+            <div class="img"><img class="max-w-12 rounded-3xl " src="https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg" alt="" srcset=""></div>
+            <div class="top1 flex-col pr-2">
+            <span class="text-white font-bold hover:underline ">Donald J. Trump
+             
+            </span>
+            <span class="text-gray-500"> @realDonaldTrump
+              ·
+              Apr 19</span>
+            <div class="text">This is the hand of the man that the Democrats feel should be brought back to the United States, because he is such “a fine and innocent person.” They said he is not a member of MS-13, even though he’s got MS-13 tattooed onto his knuckles, and two Highly Respected Courts found</div>
+            </div>
+          </div>
+          <div class="content my-2 flex flex-col p-6 pt-0 gap-2 pb-0">
+            <div class="hashtag text-sm text-blue-500 cursor-pointer hover:underline"></div>
+            <div class="imgp border-gray-600 rounded-3xl"><img class="rounded-3xl" src="https://pbs.twimg.com/media/Go2dv7oXAAAybJT?format=jpg&name=small" alt=""></div>
+          </div>
+          <div class="like flex text-s text-gray-500 justify-evenly mt-1">
+            <span class="flex items-center"><span class="material-symbols-outlined">
+              mode_comment
+              </span>20k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                repeat
+              </span>102</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                favorite
+              </span>100k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bar_chart
+              </span>2M</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bookmark
+                </span>
+                <span class="material-symbols-outlined">
+                  upload
+                  </span></span>
+          </div>
+        </div>
+        <div class="line w-full h-[0.5px] bg-gray-600"></div>
+        <div class="post flex flex-col">
+          <div class="topp flex p-2 pb-0 cursor-pointer gap-2 mt-1">
+            <div class="img"><img class="max-w-12 rounded-3xl " src="https://pbs.twimg.com/profile_images/1417471791845478403/MzAWCfK7_400x400.jpg" alt="" srcset=""></div>
+            <div class="top1 flex-col">
+            <span class="text-white font-bold hover:underline ">Rockstar Games
+            </span>
+            <span class="text-gray-500"> @RockstarGames
+              ·
+              Dec 5, 2023</span>
+            <div class="text">Here we go again.
+              Watch Grand Theft Auto VI Trailer 1 Now on YouTube:</div>
+            </div>
+          </div>
+          <div class="content my-2 flex flex-col p-5 pt-0 gap-2 pb-0">
+            <div class="hashtag text-sm text-blue-500 cursor-pointer hover:underline"> https://youtube.com/watch?v=QdBZY2fkU-0</div>
+            <div class="imgp"><img class="rounded-3xl" src="https://pbs.twimg.com/media/GAlso7OWUAAkZPk?format=jpg&name=small" alt=""></div>
+          </div>
+          <div class="like flex text-s text-gray-500 justify-evenly mt-1">
+            <span class="flex items-center"><span class="material-symbols-outlined">
+              mode_comment
+              </span>2M</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                repeat
+              </span>34k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                favorite
+              </span>30M</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bar_chart
+              </span>1B</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bookmark
+                </span>
+                <span class="material-symbols-outlined">
+                  upload
+                  </span></span>
+          </div>
+        </div>
+         
+        <div class="line w-full h-[0.5px] bg-gray-600"></div>
+        <div class="post flex flex-col">
+          <div class="topp flex p-2 pb-0 cursor-pointer gap-2 mt-1">
+            <div class="img"><img class="max-w-12 rounded-3xl " src="https://pbs.twimg.com/profile_images/1758226287942844418/XbP0dYmY_400x400.jpg" alt="" srcset=""></div>
+            <div class="top1 flex-col">
+            <span class="text-white font-bold hover:underline ">
+              TribaI Wrestling
+            </span>
+            <span class="text-gray-500"> @TribalMegastar
+              ·
+              Sep 14, 2024</span>
+            <div class="text">ROMAN REIGNS IS BACK IN WWE. 🚨
+
+              THE GREATEST WRESTLER OF ALL TIME IS HERE 🔥</div>
+            </div>
+          </div>
+          <div class="content my-2 flex flex-col p-5 pt-0 gap-2 pb-0">
+            <div class="hashtag text-sm text-blue-500 cursor-pointer hover:underline">#SmackDown</div>
+            <div class="imgp"><img class="rounded-3xl" src="https://pbs.twimg.com/media/GUG0AxrWkAA_Jes?format=jpg&name=small" alt=""></div>
+          </div>
+          <div class="like flex text-s text-gray-500 justify-evenly mt-1">
+            <span class="flex items-center"><span class="material-symbols-outlined">
+              mode_comment
+              </span>8.2k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                repeat
+              </span>95</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                favorite
+              </span>867k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bar_chart
+              </span>27M</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bookmark
+                </span>
+                <span class="material-symbols-outlined">
+                  upload
+                  </span></span>
+          </div>
+        </div>
+        
+
+        <div class="line w-full h-[0.5px] bg-gray-600"></div>
+        <div class="post flex flex-col">
+          <div class="topp flex p-2 pb-0 cursor-pointer gap-2 mt-1">
+            <div class="img"><img class="max-w-12 rounded-3xl " src="https://pbs.twimg.com/profile_images/1849024764272054272/noLrb70s_400x400.jpg" alt="" srcset=""></div>
+            <div class="top1 flex-col">
+            <span class="text-white font-bold hover:underline ">Daily Harry Potter           
+            </span>
+            <span class="text-gray-500"> @TheDailyHPotter
+              ·
+              12h</span>
+            <div class="text">The Hogwarts founders 🏰</div>
+            </div>
+          </div>
+          <div class="content my-2 flex flex-col p-5 pt-0 gap-2 pb-0">
+            <div class="hashtag text-sm text-blue-500 cursor-pointer hover:underline"></div>
+            <div class="imgp"><img class="rounded-3xl" src="https://pbs.twimg.com/media/GozIJatWIAEIUEI?format=jpg&name=900x900" alt=""></div>
+          </div>
+          <div class="like flex text-s text-gray-500 justify-evenly mt-1">
+            <span class="flex items-center"><span class="material-symbols-outlined">
+              mode_comment
+              </span>4.5k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                repeat
+              </span>1k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                favorite
+              </span>87k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bar_chart
+              </span>2M</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bookmark
+                </span>
+                <span class="material-symbols-outlined">
+                  upload
+                  </span></span>
+          </div>
+        </div>
+         
+
+        <div class="line w-full h-[0.5px] bg-gray-600"></div>
+        <div class="post flex flex-col">
+          <div class="topp flex p-2 pb-0 cursor-pointer gap-2 mt-1">
+            <div class="img"><img class="max-w-12 rounded-3xl " src="https://pbs.twimg.com/profile_images/1881673794810781696/UHgKijNw_400x400.jpg" alt="" srcset=""></div>
+            <div class="top1 flex-col">
+            <span class="text-white font-bold hover:underline ">Indian Tech & Infra
+            </span>
+            <span class="text-gray-500">@IndiaTechInfra
+              ·
+              Apr 19</span>
+            <div class="text">🚨 Japan Gifts India Two Bullet Trains Worth ₹600 Crores for Free as a Gesture of Goodwill for Its ‘Friendship",.</div>
+            </div>
+          </div>
+          <div class="content my-2 flex flex-col p-5 pt-0 gap-2 pb-0">
+            <div class="hashtag text-sm text-blue-500 cursor-pointer hover:underline"></div>
+            <div class="imgp"><img class="rounded-3xl" src="https://pbs.twimg.com/media/Go41VkSXUAAaWFX?format=jpg&name=900x900" alt=""></div>
+          </div>
+          <div class="like flex text-s text-gray-500 justify-evenly mt-1">
+            <span class="flex items-center"><span class="material-symbols-outlined">
+              mode_comment
+              </span>8.2k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                repeat
+              </span>95</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                favorite
+              </span>867k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bar_chart
+              </span>27M</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bookmark
+                </span>
+                <span class="material-symbols-outlined">
+                  upload
+                  </span></span>
+          </div>
+        </div>
+        
+        <div class="line w-full h-[0.5px] bg-gray-600"></div>
+        <div class="post flex flex-col">
+          <div class="topp flex p-2 pb-0 cursor-pointer gap-2 mt-1">
+            <div class="img"><img class="max-w-12 rounded-3xl " src="https://pbs.twimg.com/profile_images/1843446026625052672/q5VAiqHg_400x400.jpg" alt="" srcset=""></div>
+            <div class="top1 flex-col">
+            <span class="text-white font-bold hover:underline ">Indian Air Force
+            </span>
+            <span class="text-gray-500">@IAF_MCC
+              ·
+              Apr 2</span>
+            <div class="text">Indian Air Force in Exercise INIOCHOS-25
+
+              The #IAF’s Su-30 MKIs soar over Andravida, Greece, joining 14 other nations in a high-intensity air combat exercise. INIOCHOS-25 seeks to enhance operational synergy, sharpen tactics, and reinforce global defence ties.</div>
+            </div>
+          </div>
+          <div class="content my-2 flex flex-col p-5 pt-0 gap-2 pb-0">
+            <div class="hashtag text-sm text-blue-500 cursor-pointer hover:underline">#INIOCHOS25 #IAF #DefenceDiplomacy</div>
+            <div class="imgp"><img class="rounded-3xl" src="https://pbs.twimg.com/media/GngAUclXwAAZg4Y?format=jpg&name=small" alt=""></div>
+          </div>
+          <div class="like flex text-s text-gray-500 justify-evenly mt-1">
+            <span class="flex items-center"><span class="material-symbols-outlined">
+              mode_comment
+              </span>20k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                repeat
+              </span>345</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                favorite
+              </span>87k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bar_chart
+              </span>4M</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bookmark
+                </span>
+                <span class="material-symbols-outlined">
+                  upload
+                  </span></span>
+          </div>
+        </div>
+
+        <div class="line w-full h-[0.5px] bg-gray-600"></div>
+        <div class="post flex flex-col">
+          <div class="topp flex p-2 pb-0 cursor-pointer gap-2 mt-1">
+            <div class="img"><img class="max-w-12 rounded-3xl " src="https://pbs.twimg.com/profile_images/842358957997883392/59-UQhVS_400x400.jpg" alt="" srcset=""></div>
+            <div class="top1 flex-col">
+            <span class="text-white font-bold hover:underline ">Python Developer
+            </span>
+            <span class="text-gray-500">@Python_Dv
+              ·
+              7h</span>
+            <div class="text">Basic SQL commands!</div>
+            </div>
+          </div>
+          <div class="content my-2 flex flex-col p-5 pt-0 gap-2 pb-0">
+            <div class="hashtag text-sm text-blue-500 cursor-pointer hover:underline">#sql</div>
+            <div class="imgp"><img class="rounded-3xl" src="https://pbs.twimg.com/media/Go6FtcMbcAASfWO?format=png&name=small" alt=""></div>
+          </div>
+          <div class="like flex text-s text-gray-500 justify-evenly mt-1">
+            <span class="flex items-center"><span class="material-symbols-outlined">
+              mode_comment
+              </span>2k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                repeat
+              </span>5k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                favorite
+              </span>37k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bar_chart
+              </span>34k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bookmark
+                </span>
+                <span class="material-symbols-outlined">
+                  upload
+                  </span></span>
+          </div>
+        </div>
+
+        <div class="line w-full h-[0.5px] bg-gray-600"></div>
+        <div class="post flex flex-col">
+          <div class="topp flex p-2 pb-0 cursor-pointer gap-2 mt-1">
+            <div class="img"><img class="max-w-12 rounded-3xl " src="https://pbs.twimg.com/profile_images/1864958319435325440/oqLJOW4K_400x400.jpg" alt="" srcset=""></div>
+            <div class="top1 flex-col">
+            <span class="text-white font-bold hover:underline ">Ministry of Education
+            </span>
+            <span class="text-gray-500"> @EduMinOfIndia
+              ·
+              Apr 16</span>
+            <div class="text">Mounika Kammari, a bright student from Neeral village in Kamareddy, Telangana exemplifies the transformative power of education and perseverance. A proud alumna of Kasturba Gandhi Balika Vidyalaya, Lingampet, Telangana, Mounika's journey from a modest background to becoming the</div>
+            </div>
+          </div>
+          <div class="content my-2 flex flex-col p-5 pt-0 gap-2 pb-0">
+            <div class="hashtag text-sm text-blue-500 cursor-pointer hover:underline">#NEP2020SuccessStories #Education4All #SchoolEducation #SamagraShiksha #DoSEL #GirlsEducation </div>
+            <div class="imgp"><img class="rounded-3xl" src="https://pbs.twimg.com/media/GoqMrDrWMAELuJB?format=jpg&name=900x900" alt=""></div>
+          </div>
+          <div class="like flex text-s text-gray-500 justify-evenly mt-1">
+            <span class="flex items-center"><span class="material-symbols-outlined">
+              mode_comment
+              </span>2k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                repeat
+              </span>5</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                favorite
+              </span>234</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bar_chart
+              </span>67</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bookmark
+                </span>
+                <span class="material-symbols-outlined">
+                  upload
+                  </span></span>
+          </div>
+        </div>
+
+        <div class="line w-full h-[0.5px] bg-gray-600"></div>
+        <div class="post flex flex-col">
+          <div class="topp flex p-2 pb-0 cursor-pointer gap-2 mt-1">
+            <div class="img"><img class="max-w-12 rounded-3xl " src="https://pbs.twimg.com/profile_images/1167221863103074305/Ziap6jxO_400x400.png" alt="" srcset=""></div>
+            <div class="top1 flex-col">
+            <span class="text-white font-bold hover:underline ">Star Wars
+            </span>
+            <span class="text-gray-500">@starwars
+              ·
+              Apr 18</span>
+            <div class="text">Cheers to 20 years of Lucasfilm Animation.</div>
+            </div>
+          </div>
+          <div class="content my-2 flex flex-col p-5 pt-0 gap-2 pb-0">
+            <div class="hashtag text-sm text-blue-500 cursor-pointer hover:underline">#StarWarsCelebration</div>
+            <div class="imgp"><img class="rounded-3xl" src="https://pbs.twimg.com/media/Goy_n0IbEAAi5X8?format=jpg&name=small" alt=""></div>
+          </div>
+          <div class="like flex text-s text-gray-500 justify-evenly mt-1">
+            <span class="flex items-center"><span class="material-symbols-outlined">
+              mode_comment
+              </span>45k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                repeat
+              </span>786</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                favorite
+              </span>36k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bar_chart
+              </span>3M</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bookmark
+                </span>
+                <span class="material-symbols-outlined">
+                  upload
+                  </span></span>
+          </div>
+        </div>
+
+        <div class="line w-full h-[0.5px] bg-gray-600"></div>
+        <div class="post flex flex-col">
+          <div class="topp flex p-2 pb-0 cursor-pointer gap-2 mt-1">
+            <div class="img"><img class="max-w-12 rounded-3xl " src="https://pbs.twimg.com/profile_images/1730334391501488129/G0R0sjHH_400x400.jpg" alt="" srcset=""></div>
+            <div class="top1 flex-col">
+            <span class="text-white font-bold hover:underline ">Tailwind CSS
+            </span>
+            <span class="text-gray-500">@tailwindcss
+              ·
+              Apr 31</span>
+            <div class="text">✨ Just published Tailwind CSS v4.0-beta.1!
+
+              ⚡ Up to 5x faster builds, 100x faster rebuilds
+              🧰 Built-in imports, vendor prefixing, and more
+              🪄 Simplified, CSS-first configuration
+              🦾 Modern CSS features like @​starting-style and container queries
+              🎨 New wide-gamut color palette
+              </div>
+            </div>
+          </div>
+          <div class="content my-2 flex flex-col p-5 pt-0 gap-2 pb-0">
+            <div class="hashtag text-sm text-blue-500 cursor-pointer hover:underline"></div>
+            <div class="imgp"><img class="rounded-3xl" src="https://pbs.twimg.com/media/Gc7d4a5W0AEdp5d?format=jpg&name=900x900" alt=""></div>
+          </div>
+          <div class="like flex text-s text-gray-500 justify-evenly mt-1">
+            <span class="flex items-center"><span class="material-symbols-outlined">
+              mode_comment
+              </span>458</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                repeat
+              </span>34</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                favorite
+              </span>234</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bar_chart
+              </span>10k</span>
+              <span class="flex items-center"><span class="material-symbols-outlined">
+                bookmark
+                </span>
+                <span class="material-symbols-outlined">
+                  upload
+                  </span></span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+    <div class="third w-[60%]  sticky top-0 h-screen overflow-y-scroll scrollbar-hide ">
+      <div class="search flex gap-1 items-center m-3 mx-7 justify-start border-gray-400 px-4 py-2 rounded-full border">
+          <span class="material-symbols-outlined text-gray-500">
+            search
+            </span>
+           <input type="text" class=" bg-black text-white placeholder-white outline-none" placeholder="
+              search">
+      </div>
+      <div class="preimum w-[22vw] border border-gray-500 rounded-3xl m-3 mx-7">
+        <h1 class="font-bold text-xl p-3">Subscribe to Premium</h1>
+        <p class="p-3 pt-0">Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
+        <div class="btn1 p-3 pt-1"><button class=" bg-sky-500 rounded-full py-2 px-7 font-bold hover:bg-sky-600">Subscribe</button></div>
+      </div>
+      <div class="whats m-3 mx-7 w-[22vw] border border-gray-500 rounded-3xl ">
+        <h1 class="font-bold text-xl p-3 pb-1 pt-4">What’s happening</h1>
+        <div class="itmes my-2 cursor-pointer hover:bg-gray-800  p-2 px-4">
+          <div class=" text-sm text-[rgba(113,118,123,1)] ">Cricket . Tranding</div>
+          <div class="font-bold">#MsDhoni</div>
+          <div class="text-sm text-[rgba(113,118,123,1)]">1M Posts</div>
+        </div>
+        <div class="itmes my-2 cursor-pointer hover:bg-gray-800  p-2 px-4">
+          <div class=" text-sm text-[rgba(113,118,123,1)] ">Politics . Tranding</div>
+          <div class="font-bold">#Impeach</div>
+          <div class="text-sm text-[rgba(113,118,123,1)]">40.2k Posts</div>
+        </div>
+        <div class="itmes my-2 cursor-pointer hover:bg-gray-800  p-2 px-4">
+          <div class=" text-sm text-[rgba(113,118,123,1)] ">Entertainment . Tranding</div>
+          <div class="font-bold">#Kasri Chapter2</div>
+          <div class="text-sm text-[rgba(113,118,123,1)]">430k Posts</div>
+        </div>
+        <div class="text-blue-400 pt-0 p-4 hover:underline cursor-pointer">show more</div>
+      </div>
+      <div class="aibtn fixed right-20 bottom-20"><button class=" w-14 h-[55px] border cursor-pointer bg-black border-gray-500 z-10 rounded-2xl shadow-[0_0_15px_4px_rgba(255,255,255,0.5)]"><span class="material-symbols-outlined text-white">
+            robot_2
+          </span></button></div>
+      <div class="chatbox w-[260px] h-[290px] bg-black fixed z-20 right-20 hidden bottom-10 border border-gray-500 rounded-3xl shadow-   [0_0_15px_4px_rgba(255,255,255,0.5)] overflow-y-scroll scrollbar-hide">
+         <div class=" w-full p-2 pl-4 flex justify-between">
+          <span>Chat Bot</span>
+          <span id="crosschat" class="material-symbols-outlined cursor-pointer">
+            close
+          </span>
+         </div>
+         <div class="w-full h-[0.5px] bg-gray-500"></div>
+         <div class="chat bg-black w-full flex flex-col overflow-y-scroll scrollbar-hide">
+          <span id="pancho" class="p-2">- hey!How can I help you today?</span>
+          <div id="pancho1" class="query w-full flex  ml-2 gap-1"><span>-</span><textarea class="bg-black w-10/12 outline-none placeholder:text-gray-700" id="question" rows="6" placeholder="Write your Query"></textarea></div>
+          <div id="pancho2" class="my-2 flex justify-center"><button id="enter" class="bg-white text-black font-bold p-2 mt-1 px-4 rounded-3xl hover:bg-slate-300">Enter</button></div>
+        </div>
+      </div>
+      <div class="follow m-3 mx-7 w-[22vw] border border-gray-500 rounded-3xl ">
+        <h1 class="font-bold text-xl p-3 pb-0">Who to follow</h1>
+        <div class="itmes my-2 cursor-pointer hover:bg-gray-800  p-2 px-3 flex flex-row gap-2">
+          <div class="icon"><img class="w-12 rounded-full" src="https://pbs.twimg.com/profile_images/1833509376528945157/5AeMNn9f_400x400.jpg" alt="" srcset=""></div>
+          <div class="name flex flex-col w-44">
+            <div class="name1  hover:underline">Narendra Modi</div>
+            <div class="name2 text-[rgba(113,118,123,1)]">@Narendra Modi</div>
+          </div>
+          <div class="btn2 ml-7"><button class="bg-white text-black font-bold p-2 px-4 rounded-3xl ">Follow</button></div>
+        </div>
+        <div class="itmes my-2 cursor-pointer hover:bg-gray-800  p-2 px-3 flex flex-row gap-2">
+          <div class="icon"><img class="w-12 rounded-full" src="https://pbs.twimg.com/profile_images/1833514626039869440/Y1V47Kaj_400x400.jpg" alt="" srcset=""></div>
+          <div class="name flex flex-col w-44">
+            <div class="name1 hover:underline">Dr. S. Jaishankar</div>
+            <div class="name2 text-[rgba(113,118,123,1)]">@DrSJaishankar</div>
+          </div>
+          <div class="btn2 ml-7"><button class="bg-white text-black font-bold p-2 px-4 rounded-3xl ">Follow</button></div>
+        </div>
+        <div class="itmes my-2 cursor-pointer hover:bg-gray-800  p-2 px-3 flex flex-row gap-2">
+          <div class="icon"><img class="w-12 rounded-full" src="https://pbs.twimg.com/profile_images/1515975947773952008/nR8cs3I2_400x400.jpg" alt="" srcset=""></div>
+          <div class="name flex flex-col w-44">
+            <div class="name1 hover:underline">Punjabi University</div>
+            <div class="name2 text-[rgba(113,118,123,1)]">@PbiUniPatiala</div>
+          </div>
+          <div class="btn2 ml-7"><button class="bg-white text-black font-bold p-2 px-4 rounded-3xl ">Follow</button></div>
+        </div>
+        <div class="text-blue-400 pt-0 p-4 hover:underline cursor-pointer">show more</div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    setInterval(() => {
+      let a = Math.floor(Math.random() * 100 + 20);
+      document.querySelector(".show").innerText = "show " + a + " posts";
+    }, 20000);
+    document.querySelector(".aibtn").addEventListener('click', () => {
+      document.querySelector(".chatbox").classList.remove('hidden');
+    })
+    document.getElementById("crosschat").addEventListener('click', () => {
+      document.querySelector(".chatbox").classList.add('hidden');
+    })
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
